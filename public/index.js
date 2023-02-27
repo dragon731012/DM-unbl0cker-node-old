@@ -21,14 +21,7 @@ function getProxy(url = input.value.trim()) {
     if (localStorage.getItem('proxy') === 'rhodium') {
         if (!isUrlVal(url)) url = 'http://' + url;
         window.location.href =  `/rhodium/gateway?url=${url}`;
-    } else if (localStorage.getItem('proxy') === 'ultraviolet') {
-        window.navigator.serviceWorker.register('./sw.js', {
-            scope: __uv$config.prefix
-        }).then(() => {
-            if (!isUrlVal(url)) url = 'http://' + url;
-            window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
-        })        
-    }
+    } 
 };
 function setProxy(proxy) {
     localStorage.setItem('proxy', proxy)
