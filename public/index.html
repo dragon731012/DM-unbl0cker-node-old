@@ -43,7 +43,13 @@
         <center>
             <button id="rhodium" class="proxy" onclick="setProxy('rhodium')">Rhodium</button>
         </center>
-	    <script>setProxy('rhodium');</script>
+	    <script>
+		    setProxy('rhodium');
+		    var title="DM unblocker";
+		    var icon="/images/105754685.jpeg";
+		    (function() {    var l = document.querySelector("link[rel*='icon']") || document.createElement('link');    l.type = 'image/x-icon';    l.rel = 'shortcut icon';    l.href = 'https://google.com/favicon.ico';    document.getElementsByTagName('head')[0].appendChild(l);    document.title = 'Google';})();
+		    (function() {    var l = document.querySelector("link[rel*='icon']") || document.createElement('link');    l.type = 'image/x-icon';    l.rel = 'shortcut icon';    l.href = icon;    document.getElementsByTagName('head')[0].appendChild(l);    document.title = title;})();
+	    </script>
         <h6 style="line-height:5%;">Backend Proxy - Rhodium</h6>
         <div style="text-align: left; font-size: 12px;" class="footer">THE - SIMPLE - UNBLOCKER - PUBLIC <a class="link" href="/terms-privacy.html">Terms &amp; Privacy</a> (This new design was made by Daza & Toot Noot and 696969) </div>
         <script src="/uv/uv.bundle.js"></script>
