@@ -19,10 +19,10 @@ input.addEventListener('keydown', (e) => {
 
 function getProxy(url = input.value.trim()) {
     if (localStorage.getItem('proxy') === 'rhodium') {
-        if (!isUrlVal(url)) url = 'http://' + url;
         if (url.includes(".")==false){
             url="http://www.google.com/search?q="+url;
         }
+        if (!isUrlVal(url)) url = 'http://' + url;
         window.location.href =  `/rhodium/gateway?url=${url}`;
     } 
 };
