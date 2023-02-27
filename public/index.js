@@ -4,7 +4,6 @@ const submit = document.getElementById('submit');
 const uv = document.getElementById('ultraviolet');
 const rhodium = document.getElementById('rhodium');
 
-localStorage.setItem('proxy', 'rhodium')
 window.addEventListener('load', () => {
     const currentproxy = localStorage.getItem('proxy');
     if (currentproxy !== null) {
