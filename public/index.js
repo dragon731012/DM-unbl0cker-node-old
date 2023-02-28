@@ -31,7 +31,7 @@ function setProxy(proxy) {
     if (proxy == 'rhodium') {
         rhodium.classList.add('selected')
         uv.classList.remove('selected')
-    } else if (proxy == 'ultraviolet') {
+    } else if (proxy == 'node') {
         rhodium.classList.remove('selected')
         uv.classList.add('selected')
     }
