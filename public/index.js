@@ -31,7 +31,6 @@ function getProxy(url = input.value.trim()) {
 		}
 		
 		$('unblocker-form').onsubmit = function(){
-			var url = $('url').value;
 			if(url.substr(0,4) != "http"){
 				url = "http://" + url;
 			}
