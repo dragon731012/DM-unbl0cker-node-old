@@ -1,7 +1,7 @@
 const input = document.getElementById('input');
 const submit = document.getElementById('submit');
 
-const uv = document.getElementById('ultraviolet');
+const uv = document.getElementById('node');
 const rhodium = document.getElementById('rhodium');
 
 window.addEventListener('load', () => {
