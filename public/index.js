@@ -29,7 +29,7 @@ function getProxy(url = input.value.trim()) {
         if (url.includes(".")==false){
             url="https://www.google.com/search?q="+url;
         }
-        window.location.href =  `p/https://${url}`;
+        window.location.href =  `p/${url}`;
     } 
 };
 function setProxy(proxy) {
