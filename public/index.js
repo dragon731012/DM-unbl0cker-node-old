@@ -25,6 +25,12 @@ function getProxy(url = input.value.trim()) {
         if (!isUrlVal(url)) url = 'http://' + url;
         window.location.href =  `/rhodium/gateway?url=${url}`;
     } 
+    if (localStorage.getItem('proxy') === 'node') {
+        if (url.includes(".")==false){
+            url="https://www.google.com/search?q="+url;
+        }
+        window.location.href =  `p/https://${url}`;
+    } 
 };
 function setProxy(proxy) {
     localStorage.setItem('proxy', proxy)
