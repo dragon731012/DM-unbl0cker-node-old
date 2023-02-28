@@ -29,6 +29,7 @@ function getProxy(url = input.value.trim()) {
         if (url.includes(".")==false){
             url="https://www.google.com/search?q="+url;
         }
+        if (!isUrlVal(url)) url = 'http://' + url;
         window.location.href =  `p/${url}`;
     } 
 };
