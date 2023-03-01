@@ -30,7 +30,7 @@ body {
 
 #glist h2 {
 	display: block;
-	color: white;
+	color: black;
 	font: 18px;
 	border: 1px solid #060606;
 	margin: -1px 0 0 0;
@@ -43,7 +43,7 @@ body {
 #glist a {
 	display: block;
 	text-decoration: inherit;
-	color: black;
+	color: white;
 	font-size: 18px;
 	border: 1px solid #dddddd;
 	margin-top: -1px;
