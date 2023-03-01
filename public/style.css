@@ -1,8 +1,7 @@
-.box {
-	margin: auto;
-	background-color: white;
-	padding: 10px;
-	width: 400px;
+body {
+    text-align: center;
+    background-color: #2b2a33;
+    background-image: url("images/AffectionateDesertedGoa-max-1mb.gif");
 }
 
 #glist {
